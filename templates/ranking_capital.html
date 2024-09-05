@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranking de Capital</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ranking de Capital Investido</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da Empresa</th>
+                <th>Capital Investido (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for empresa in ranking %}
+            <tr>
+                <td>{{ empresa['name'] }}</td>
+                <td>{{ empresa['funding_total_usd'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/home">Voltar para a Página Inicial</a>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Empresa</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Detalhes da Empresa: {{ nome }}</h1>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome da Empresa</td>
+                    <td>{{ nome }}</td>
+                </tr>
+                <tr>
+                    <td>Data de Fundação</td>
+                    <td>{{ fundação }}</td>
+                </tr>
+                <tr>
+                    <td>Data de Fechamento</td>
+                    <td>{{ fechado }}</td>
+                </tr>
+                <tr>
+                    <td>Categoria</td>
+                    <td>{{ categoria }}</td>
+                </tr>
+                <tr>
+                    <td>Total Capital (USD)</td>
+                    <td>{{ total_capita }}</td>
+                </tr>
+                <tr>
+                    <td>Investimento Anjo</td>
+                    <td>{{ invest_anjo }}</td>
+                </tr>
+                <tr>
+                    <td>VC</td>
+                    <td>{{ vc }}</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>{{ status }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="/home">Voltar para a Página Inicial</a>
+    </div>
+
+</body>
+</html>
