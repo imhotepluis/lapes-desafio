@@ -5,7 +5,8 @@ de sucesso de startups e tambem fazer um ranking dessas empresas por capital e c
 
 Linguagens utilizadas:
 - Python
-
+- HTML
+  
 Tecnologias utilizadas:
 - FastAPI (p/criação dessas funcionalidades)
 - Pandas (p/tratamento dos dados)
